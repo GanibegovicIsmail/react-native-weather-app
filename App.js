@@ -3,10 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Promjena</Text>
-      <StatusBar style="auto" />
-    </View>
+    <View style={{height: 100, width: 100, backgroundColor: "orange"}}>
+              <Text>Hello World</Text>
+      </View>
   );
 }
 
