@@ -7,6 +7,7 @@ const CurrentWeather = () => {
   return (
 
     <SafeAreaView style ={GlobalStyles.androidSafeArea}>
+      <View style ={styles.wrapper}>
     <View style = {styles.container}>
     <Feather name="sun" size={100} color="black" />
       <Text style={styles.temp}>6</Text>
@@ -20,6 +21,7 @@ const CurrentWeather = () => {
         <Text style={styles.description}>It's sunny</Text>
         <Text style={styles.message}>It's perfect t-shirt weather</Text>
       </View>
+      </View>
     </SafeAreaView>
   )
 }
@@ -28,6 +30,10 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  wrapper:{
+    backgroundColor: 'pink',
+    flex: 1
   },
   temp: {
   color: 'black',
