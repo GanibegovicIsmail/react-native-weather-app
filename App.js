@@ -5,7 +5,7 @@ import UpcomingWeather from "./src/components/UpcomingWeather";
 const App = () =>{
   return (
 <View style={styles.container}>
-  <UpcomingWeather/>
+  <UpcomingWeather></UpcomingWeather>
 </View>
   )
 }
