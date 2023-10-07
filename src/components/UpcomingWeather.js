@@ -1,6 +1,6 @@
 import React from 'react'
 import GlobalStyles from '../../styles/GlobalStyles';
-import { SafeAreaView, StyleSheet, Text, FlatList, View, StatusBar} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, FlatList, View, StatusBar, ImageBackground} from 'react-native';
 import {Feather} from '@expo/vector-icons'
 
 const DATA= [
@@ -57,6 +57,7 @@ const UpcomingWeather = () =>{
     )
     return (
         <SafeAreaView style ={styles.safeContainer}>
+              <ImageBackground source={require('../../assets/upcoming-background.jpg')} style={styles.image}>
             <View style ={styles.container}>
             <Text>Upcoming Weather</Text>
             <FlatList 
@@ -65,6 +66,7 @@ const UpcomingWeather = () =>{
             keyExtractor={(item) => item.dt_txt}
             />
             </View>
+            </ImageBackground>
         </SafeAreaView>
     )
 }
@@ -72,7 +74,7 @@ const UpcomingWeather = () =>{
 const styles = StyleSheet.create({
     safeContainer:{
         flex:1,
-        backgroundColor: 'red',
+        backgroundColor: 'royalblue',
         paddingTop: 20
     },
     container:{
@@ -96,6 +98,9 @@ const styles = StyleSheet.create({
     date:{
         color: 'white',
         fontSize: 15
+    },
+    image:{
+        flex:1
     }
 })
 
