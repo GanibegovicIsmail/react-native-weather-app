@@ -6,7 +6,7 @@ import City from "./src/components/screens/City";
 const App = () =>{
   return (
 <View style={styles.container}>
-  <City></City>
+  <CurrentWeather></CurrentWeather>
 </View>
   )
 }
