@@ -6,13 +6,25 @@ import { NavigationContainer } from "@react-navigation/native";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {Feather} from '@expo/vector-icons'
 
+
 const Tab = createBottomTabNavigator()
 
 const Tabs = () =>{
     return (
         <Tab.Navigator screenOptions={{
             tabBarActiveTintColor: 'tomato',
-            tabBarInactiveTintColor: 'gray'
+            tabBarInactiveTintColor: 'gray',
+            tabBarStyle: {
+                backgroundColor: 'lightblue',
+            },
+            headerStyle: {
+                backgroundColor: 'lightblue',
+            },
+            headerTitleStyle:{
+                fontWeight: 'bold',
+                fontSize:25,
+                color: 'tomato'
+            }
           }}>
             <Tab.Screen name={'Current'} component={CurrentWeather} options={{
               tabBarIcon: ({focused})=>(<Feather name={'droplet'} size ={25} 

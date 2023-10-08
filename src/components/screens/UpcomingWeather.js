@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     safeContainer:{
         flex:1,
         backgroundColor: 'royalblue',
-        paddingTop: 20
     },
     container:{
         flex:1,

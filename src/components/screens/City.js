@@ -27,7 +27,6 @@ return(
 const styles=StyleSheet.create({
     safeContainer:{
         flex:1,
-        marginTop: StatusBar.currentHeight || 0
     },
     imageLayout:{
         flex:1
