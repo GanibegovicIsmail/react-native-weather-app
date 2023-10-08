@@ -1,8 +1,7 @@
 import React from 'react'
-import GlobalStyles from '../../../styles/GlobalStyles';
 import { SafeAreaView, StyleSheet, Text, FlatList, View, StatusBar, ImageBackground} from 'react-native';
 import {Feather} from '@expo/vector-icons'
-import ListItem from '../ListItem';
+import ListItem from '../components/ListItem';
 
 const DATA= [
     {
